@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machewi Mahmoud Becha | مشاوي محمود باشا - Sfax</title>
+    <!-- Google Fonts: Playfair Display, Inter & Cairo for Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#0F0F0F',
+                        charcoal: '#161616',
+                        slateDark: '#1E1E1E',
+                        gold: {
+                            DEFAULT: '#D4AF37',
+                            light: '#F3D060',
+                            dark: '#AA8A24'
+                        },
+                        amberFire: '#F59E0B',
+                        grillRed: '#DC2626',
+                        grillOrange: '#EA580C'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Cairo', 'sans-serif'],
+                        serif: ['Playfair Display', 'Cairo', 'serif'],
+                        arabic: ['Cairo', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Scrollbar & Smooth Micro-interactions */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0F0F0F;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2A2A2A;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+
+        [dir="rtl"] body {
+            font-family: 'Cairo', sans-serif;
+        }
+        [dir="rtl"] .font-serif {
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .glass-nav {
+            background: rgba(15, 15, 15, 0.88);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+
+        .hero-glow {
+            background: radial-gradient(circle at 50% 25%, rgba(234, 88, 12, 0.16) 0%, rgba(212, 175, 55, 0.08) 35%, rgba(15, 15, 15, 1) 75%);
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #F3D060 0%, #D4AF37 50%, #F59E0B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            border-color: rgba(212, 175, 55, 0.45);
+            box-shadow: 0 12px 30px -10px rgba(212, 175, 55, 0.15);
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.75; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.06); }
+        }
+        .flame-pulse {
+            animation: pulseGlow 3s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-obsidian text-gray-100 antialiased selection:bg-gold selection:text-obsidian overflow-x-hidden">
+
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <header class="fixed top-0 inset-x-0 z-40 glass-nav border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo matching their printed menu emblem -->
+                <a href="#accueil" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-charcoal to-black border border-gold/40 flex items-center justify-center shadow-lg shadow-grillOrange/10 group-hover:border-gold transition-colors">
+                        <!-- Custom Fish + Flame SVG Emblem inspired by Machewi Mahmoud Becha logo -->
+                        <svg class="w-7 h-7 flame-pulse" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 3C18 3 13 8.5 13 12.5C13 15.2 15.2 17 18 17C20.8 17 23 15.2 23 12.5C23 10.5 21.8 8.8 20.5 7.5C20.5 9.2 19.4 10.3 18.2 10.3C17 10.3 16.5 9.1 17.2 7.2C17.8 5.6 18 3 18 3Z" fill="url(#flameGrad)"/>
+                            <path d="M6 24C10.5 19.5 21.5 19.5 28 24C21.5 28.5 10.5 28.5 6 24Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M28 24L32 20.5V27.5L28 24Z" fill="#D4AF37"/>
+                            <circle cx="11" cy="23.5" r="1.2" fill="#F59E0B"/>
+                            <defs>
+                                <linearGradient id="flameGrad" x1="18" y1="3" x2="18" y2="17" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F59E0B"/>
+                                    <stop offset="1" stop-color="#DC2626"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-serif font-bold text-base sm:text-lg tracking-wider text-white leading-tight">MACHEWI</span>
+                        <span class="text-[11px] sm:text-xs font-semibold tracking-[0.22em] text-gold uppercase">Mahmoud Becha</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                    <a href="#accueil" class="hover:text-gold transition-colors" data-i18n="nav_home">Accueil</a>
+                    <a href="#specialites" class="hover:text-gold transition-colors" data-i18n="nav_specialties">Spécialités</a>
+                    <a href="#menu" class="hover:text-gold transition-colors" data-i18n="nav_menu">Menu</a>
+                    <a href="#avis" class="hover:text-gold transition-colors" data-i18n="nav_reviews">Avis (4.2★)</a>
+                    <a href="#contact" class="hover:text-gold transition-colors" data-i18n="nav_contact">Contact</a>
+                </nav>
+
+                <!-- Right Actions: Language Toggle, Cart Button, Reserve CTA -->
+                <div class="flex items-center gap-2 sm:gap-3">
+                    <!-- Bilingual FR / AR Toggle -->
+                    <button id="langToggle" onclick="toggleLanguage()" class="px-3 py-2 rounded-xl bg-charcoal hover:bg-slateDark border border-white/15 text-xs sm:text-sm font-semibold text-gold transition-all flex items-center gap-1.5" aria-label="Changer de langue">
+                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+                        <span id="langLabel">عربي</span>
+                    </button>
+
+                    <!-- Order / Bill Estimator Cart Trigger -->
+                    <button onclick="openCartDrawer()" class="relative p-2.5 rounded-xl bg-charcoal hover:bg-slateDark border border-white/15 text-white transition-all" aria-label="Simulateur d'addition">
+                        <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                        <span id="cartBadge" class="hidden absolute -top-1.5 -right-1.5 min-w-[20px] h-5 px-1 rounded-full bg-grillRed text-white text-[11px] font-bold flex items-center justify-center shadow">0</span>
+                    </button>
+
+                    <!-- Primary CTA Button -->
+                    <a href="#reservation" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-gold to-amberFire text-obsidian font-bold text-sm shadow-lg shadow-gold/20 hover:brightness-110 transition-all" data-i18n="nav_cta">
+                        Réserver / Commander
+                    </a>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="md:hidden p-2.5 rounded-xl bg-charcoal border border-white/10 text-gray-200">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Nav -->
+        <div id="mobileMenu" class="hidden md:hidden bg-charcoal border-b border-white/10 px-4 pt-2 pb-5 space-y-2">
+            <a href="#accueil" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl hover:bg-white/5 text-gray-200 font-medium" data-i18n="nav_home">Accueil</a>
+            <a href="#specialites" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl hover:bg-white/5 text-gray-200 font-medium" data-i18n="nav_specialties">Spécialités</a>
+            <a href="#menu" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl hover:bg-white/5 text-gray-200 font-medium" data-i18n="nav_menu">Menu</a>
+            <a href="#avis" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl hover:bg-white/5 text-gray-200 font-medium" data-i18n="nav_reviews">Avis (4.2★)</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl hover:bg-white/5 text-gray-200 font-medium" data-i18n="nav_contact">Contact</a>
+            <a href="#reservation" onclick="toggleMobileMenu()" class="block text-center mt-3 px-4 py-3 rounded-xl bg-gradient-to-r from-gold to-amberFire text-obsidian font-bold text-sm" data-i18n="nav_cta">Réserver / Commander</a>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="accueil" class="relative pt-28 pb-16 sm:pt-36 sm:pb-24 hero-glow overflow-hidden">
+        <!-- Subtle decorative grid lines -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff06_1px,transparent_1px),linear-gradient(to_bottom,#ffffff06_1px,transparent_1px)] bg-[size:48px_48px] pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- Trust & Status Badges -->
+            <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 mb-7">
+                <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-charcoal/90 border border-gold/30 text-xs sm:text-sm font-medium text-gold shadow-sm">
+                    <span>★ 4.2/5</span>
+                    <span class="text-gray-300" data-i18n="badge_reviews">sur Google (85 avis)</span>
+                </span>
+                <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-charcoal/90 border border-emerald-500/30 text-xs sm:text-sm font-medium text-emerald-400">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span data-i18n="badge_hours">Ouvert jusqu’à 00:00</span>
+                </span>
+                <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-charcoal/90 border border-white/15 text-xs sm:text-sm font-medium text-gray-300" data-i18n="badge_service">
+                    Repas sur place & Drive
+                </span>
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white max-w-4xl mx-auto leading-[1.15] mb-5">
+                <span data-i18n="hero_title_1">L’Art de la Grillade & des</span>
+                <span class="gold-gradient-text block sm:inline" data-i18n="hero_title_2">Fruits de Mer à Sfax</span>
+            </h1>
+
+            <!-- Subheadline -->
+            <p class="text-base sm:text-xl text-gray-300 max-w-2xl mx-auto mb-9 leading-relaxed" data-i18n="hero_subtitle">
+                Saveurs authentiques, produits frais et ambiance familiale sur la Route de Mahdia.
+            </p>
+
+            <!-- Hero Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4 max-w-2xl mx-auto">
+                <a href="#menu" class="w-full sm:w-auto px-7 py-4 rounded-2xl bg-gradient-to-r from-gold via-amberFire to-grillOrange text-obsidian font-bold text-base shadow-xl shadow-grillOrange/20 hover:brightness-110 transition-all flex items-center justify-center gap-2">
+                    <span data-i18n="cta_menu">Voir le Menu Complet</span>
+                    <svg class="w-5 h-5 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </a>
+
+                <a href="tel:+21698412143" class="w-full sm:w-auto px-6 py-4 rounded-2xl bg-charcoal hover:bg-slateDark border border-gold/40 text-white font-semibold text-base transition-all flex items-center justify-center gap-2.5">
+                    <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                    <span dir="ltr">Appeler: 98 412 143</span>
+                </a>
+
+                <a href="https://glovoapp.com" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-4 rounded-2xl bg-[#FFC244]/10 hover:bg-[#FFC244]/20 border border-[#FFC244]/40 text-[#FFC244] font-semibold text-base transition-all flex items-center justify-center gap-2">
+                    <span data-i18n="cta_glovo">Commander sur Glovo</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                </a>
+            </div>
+
+            <!-- Quick Key Stats Bar -->
+            <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                <div class="p-4 rounded-2xl bg-charcoal/80 border border-white/10">
+                    <div class="text-2xl font-bold text-gold">30–60 DT</div>
+                    <div class="text-xs text-gray-400 mt-1" data-i18n="stat_price">Budget moyen / pers.</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-charcoal/80 border border-white/10">
+                    <div class="text-2xl font-bold text-white">100% Frais</div>
+                    <div class="text-xs text-gray-400 mt-1" data-i18n="stat_fresh">Fruits de mer & Viandes</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-charcoal/80 border border-white/10">
+                    <div class="text-2xl font-bold text-grillOrange">00:00</div>
+                    <div class="text-xs text-gray-400 mt-1" data-i18n="stat_night">Service tardif chaque soir</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-charcoal/80 border border-white/10">
+                    <div class="text-2xl font-bold text-emerald-400">Rte Mahdia</div>
+                    <div class="text-xs text-gray-400 mt-1" data-i18n="stat_loc">Sfax, Accès facile & Drive</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SPECIALTIES SHOWCASE ==================== -->
+    <section id="specialites" class="py-16 sm:py-20 bg-charcoal/50 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-[0.2em] text-grillOrange" data-i18n="spec_kicker">Les Incontournables de la Maison</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-2" data-i18n="spec_title">Nos Spécialités Signatures</h2>
+                </div>
+                <p class="text-sm text-gray-400 max-w-md" data-i18n="spec_desc">
+                    Préparés à la minute sur notre grill ou sautés avec nos épices méditerranéennes traditionnelles de Sfax.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Specialty 1: Spaghetti Crevettes -->
+                <div class="rounded-2xl bg-charcoal border border-white/10 overflow-hidden card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 bg-gradient-to-br from-grillRed/30 via-grillOrange/20 to-obsidian relative flex items-center justify-center p-6">
+                            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-obsidian/80 border border-gold/30 text-[11px] font-bold text-gold" data-i18n="tag_bestseller">★ Best-Seller</span>
+                            <!-- Stylized Shrimp Pasta SVG -->
+                            <svg class="w-24 h-24 drop-shadow-lg" viewBox="0 0 100 100" fill="none">
+                                <ellipse cx="50" cy="70" rx="38" ry="12" fill="#1E1E1E" stroke="#D4AF37" stroke-width="2"/>
+                                <path d="M22 65C30 45 70 45 78 65" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+                                <path d="M26 62C38 40 62 40 74 62" stroke="#EA580C" stroke-width="3.5" stroke-linecap="round"/>
+                                <path d="M40 42C34 32 46 24 56 30C64 35 60 46 50 46" stroke="#DC2626" stroke-width="5" stroke-linecap="round"/>
+                                <circle cx="57" cy="31" r="2" fill="#FFF"/>
+                            </svg>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-start justify-between gap-2">
+                                <h3 class="font-bold text-lg text-white">Spaghetti Crevettes</h3>
+                                <span class="font-bold text-gold whitespace-nowrap">34,500 DT</span>
+                            </div>
+                            <p class="text-xs text-gold/80 font-arabic mt-0.5">سباقتي كروفات</p>
+                            <p class="text-sm text-gray-400 mt-3 leading-relaxed" data-i18n="spec1_desc">
+                                Grosses crevettes fraîches sautées à l'ail, sauce tomate relevée aux épices sfaxiennes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5">
+                        <button onclick="quickAddByName('Spagetti Crevettes')" class="w-full py-2.5 rounded-xl bg-white/5 hover:bg-gold hover:text-obsidian border border-white/10 text-sm font-semibold text-white transition-all" data-i18n="btn_add_order">
+                            + Ajouter à ma commande
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Specialty 2: Loup de Mer Grillé -->
+                <div class="rounded-2xl bg-charcoal border border-white/10 overflow-hidden card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 bg-gradient-to-br from-amberFire/25 via-charcoal to-obsidian relative flex items-center justify-center p-6">
+                            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-obsidian/80 border border-grillOrange/40 text-[11px] font-bold text-grillOrange" data-i18n="tag_grill">🔥 Au Feu de Bois</span>
+                            <!-- Stylized Grilled Sea Bass SVG -->
+                            <svg class="w-24 h-24 drop-shadow-lg" viewBox="0 0 100 100" fill="none">
+                                <path d="M16 52C30 32 66 32 82 52C66 72 30 72 16 52Z" fill="#292524" stroke="#D4AF37" stroke-width="2.5"/>
+                                <path d="M82 52L94 40V64L82 52Z" fill="#D4AF37"/>
+                                <path d="M36 42L42 62M48 40L54 64M60 42L66 62" stroke="#EA580C" stroke-width="2.5" stroke-linecap="round"/>
+                                <circle cx="26" cy="50" r="2.5" fill="#F59E0B"/>
+                            </svg>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-start justify-between gap-2">
+                                <h3 class="font-bold text-lg text-white">Loup de Mer Grillé</h3>
+                                <span class="font-bold text-gold whitespace-nowrap" data-i18n="price_market">Selon arrivage</span>
+                            </div>
+                            <p class="text-xs text-gold/80 font-arabic mt-0.5">قاروص مشوي مع سلاطة مشوية</p>
+                            <p class="text-sm text-gray-400 mt-3 leading-relaxed" data-i18n="spec2_desc">
+                                Poisson frais du jour grillé à la perfection, servi avec frites maison, salade méchouia et citron.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5">
+                        <a href="#reservation" class="block text-center w-full py-2.5 rounded-xl bg-white/5 hover:bg-gold hover:text-obsidian border border-white/10 text-sm font-semibold text-white transition-all" data-i18n="btn_reserve_fish">
+                            Réserver une table
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Specialty 3: Grillage Mixte -->
+                <div class="rounded-2xl bg-charcoal border border-white/10 overflow-hidden card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 bg-gradient-to-br from-grillRed/35 via-charcoal to-obsidian relative flex items-center justify-center p-6">
+                            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-obsidian/80 border border-grillRed/40 text-[11px] font-bold text-red-400" data-i18n="tag_meat">🥩 Grillades</span>
+                            <!-- Stylized Skewers & Grill SVG -->
+                            <svg class="w-24 h-24 drop-shadow-lg" viewBox="0 0 100 100" fill="none">
+                                <line x1="20" y1="78" x2="80" y2="22" stroke="#D4AF37" stroke-width="3" stroke-linecap="round"/>
+                                <rect x="33" y="53" width="14" height="12" rx="4" transform="rotate(-43 33 53)" fill="#DC2626"/>
+                                <rect x="48" y="39" width="14" height="12" rx="4" transform="rotate(-43 48 39)" fill="#EA580C"/>
+                                <rect x="62" y="26" width="12" height="11" rx="4" transform="rotate(-43 62 26)" fill="#F59E0B"/>
+                                <path d="M25 32C25 25 32 25 32 18M42 24C42 17 49 17 49 10" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+                            </svg>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-start justify-between gap-2">
+                                <h3 class="font-bold text-lg text-white">Grillage Mixte</h3>
+                                <span class="font-bold text-gold whitespace-nowrap">39,500 DT</span>
+                            </div>
+                            <p class="text-xs text-gold/80 font-arabic mt-0.5">مشوي مشكل</p>
+                            <p class="text-sm text-gray-400 mt-3 leading-relaxed" data-i18n="spec3_desc">
+                                Assortiment généreux de viandes tendres marinées et grillées au charbon, idéal pour les amateurs de grillades.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5">
+                        <button onclick="quickAddByName('Grillage Mixte')" class="w-full py-2.5 rounded-xl bg-white/5 hover:bg-gold hover:text-obsidian border border-white/10 text-sm font-semibold text-white transition-all" data-i18n="btn_add_order">
+                            + Ajouter à ma commande
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Specialty 4: Fruits de Mer Sauce Blanche & Fromage -->
+                <div class="rounded-2xl bg-charcoal border border-white/10 overflow-hidden card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 bg-gradient-to-br from-gold/25 via-charcoal to-obsidian relative flex items-center justify-center p-6">
+                            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-obsidian/80 border border-gold/40 text-[11px] font-bold text-gold" data-i18n="tag_chef">👑 Plat du Chef</span>
+                            <!-- Stylized Gratin Dish SVG -->
+                            <svg class="w-24 h-24 drop-shadow-lg" viewBox="0 0 100 100" fill="none">
+                                <path d="M18 56H82L75 74H25L18 56Z" fill="#1E1E1E" stroke="#D4AF37" stroke-width="2.5"/>
+                                <path d="M22 54C28 42 72 42 78 54" fill="#F3D060" fill-opacity="0.25" stroke="#F59E0B" stroke-width="2.5"/>
+                                <circle cx="42" cy="48" r="4" fill="#EA580C"/>
+                                <circle cx="58" cy="47" r="4" fill="#DC2626"/>
+                            </svg>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-start justify-between gap-2">
+                                <h3 class="font-bold text-lg text-white leading-snug">Fruits de Mer Sauce Blanche & Fromage</h3>
+                                <span class="font-bold text-gold whitespace-nowrap">63,500 DT</span>
+                            </div>
+                            <p class="text-xs text-gold/80 font-arabic mt-0.5">غلال البحر بالصلصة البيضاء والجبنة</p>
+                            <p class="text-sm text-gray-400 mt-3 leading-relaxed" data-i18n="spec4_desc">
+                                Trésors de la mer nappés d'une sauce blanche onctueuse gratinée au fromage fondant.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5">
+                        <button onclick="quickAddByName('Fruits de Mer au Sauce Blanche et Fromage')" class="w-full py-2.5 rounded-xl bg-white/5 hover:bg-gold hover:text-obsidian border border-white/10 text-sm font-semibold text-white transition-all" data-i18n="btn_add_order">
+                            + Ajouter à ma commande
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== INTERACTIVE MENU & ORDER SIMULATOR ==================== -->
+    <section id="menu" class="py-20 sm:py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-[0.22em] text-gold" data-i18n="menu_kicker">La Carte Officielle</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mt-2" data-i18n="menu_title">Notre Menu Complet</h2>
+                <p class="text-sm sm:text-base text-gray-400 mt-3" data-i18n="menu_subtitle">
+                    Composez votre sélection pour estimer votre addition ou envoyer directement votre commande à emporter (Drive) via WhatsApp.
+                </p>
+            </div>
+
+            <!-- Controls: Category Filter Tabs + Search Input -->
+            <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 mb-10 bg-charcoal p-3 sm:p-4 rounded-2xl border border-white/10">
+                <!-- Filter Tabs -->
+                <div class="flex flex-wrap gap-2" id="categoryTabs">
+                    <button onclick="setCategory('all')" data-cat="all" class="cat-btn active px-4 py-2.5 rounded-xl text-sm font-bold bg-gold text-obsidian transition-all" data-i18n="tab_all">
+                        Tout le Menu (22)
+                    </button>
+                    <button onclick="setCategory('seafood')" data-cat="seafood" class="cat-btn px-4 py-2.5 rounded-xl text-sm font-semibold bg-slateDark text-gray-300 hover:text-white transition-all" data-i18n="tab_seafood">
+                        Fruits de Mer & Pâtes / أطباق
+                    </button>
+                    <button onclick="setCategory('meat')" data-cat="meat" class="cat-btn px-4 py-2.5 rounded-xl text-sm font-semibold bg-slateDark text-gray-300 hover:text-white transition-all" data-i18n="tab_meat">
+                        Viande & Volaille / اللحوم و الدواجن
+                    </button>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="relative min-w-[260px] sm:min-w-[320px]">
+                    <svg class="w-4 h-4 text-gray-400 absolute top-1/2 -translate-y-1/2 left-3.5 rtl:left-auto rtl:right-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    <input type="text" id="menuSearch" oninput="renderMenu()" placeholder="Rechercher un plat (ex: Crevettes, Agneau...)" class="w-full pl-10 pr-4 rtl:pl-4 rtl:pr-10 py-2.5 rounded-xl bg-obsidian border border-white/15 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gold transition-colors">
+                </div>
+            </div>
+
+            <!-- Menu Items Grid -->
+            <div id="menuGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
+                <!-- Populated dynamically via JS with exact prices and bilingual titles -->
+            </div>
+
+            <!-- Empty Search State -->
+            <div id="emptyMenuState" class="hidden text-center py-12 bg-charcoal rounded-2xl border border-white/10">
+                <p class="text-gray-400 text-base" data-i18n="menu_empty">Aucun plat ne correspond à votre recherche.</p>
+                <button onclick="resetFilters()" class="mt-3 px-4 py-2 rounded-xl bg-gold/15 text-gold text-sm font-semibold hover:bg-gold/25" data-i18n="menu_reset">Réinitialiser les filtres</button>
+            </div>
+
+            <!-- Floating Bottom Bar when Cart has items -->
+            <div id="floatingCartBar" class="hidden fixed bottom-4 inset-x-4 sm:inset-x-auto sm:right-6 sm:left-auto z-30 bg-charcoal/95 backdrop-blur-md border border-gold/50 rounded-2xl p-4 shadow-2xl shadow-black flex items-center justify-between gap-6">
+                <div>
+                    <div class="text-xs text-gray-400" data-i18n="est_label">Simulateur d'Addition</div>
+                    <div class="text-lg font-bold text-gold"><span id="floatingTotal">0,000</span> DT <span class="text-xs font-normal text-gray-300">(<span id="floatingCount">0</span> plats)</span></div>
+                </div>
+                <button onclick="openCartDrawer()" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-gold to-amberFire text-obsidian font-bold text-sm hover:brightness-110 transition-all" data-i18n="est_view">
+                    Voir & Commander
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CUSTOMER REVIEWS SECTION ==================== -->
+    <section id="avis" class="py-16 sm:py-24 bg-charcoal/60 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8 mb-12">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-[0.2em] text-gold" data-i18n="rev_kicker">La Parole à Nos Clients</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-2" data-i18n="rev_title">Avis Vérifiés sur Google</h2>
+                </div>
+
+                <!-- Google Rating Card -->
+                <div class="flex items-center gap-5 bg-obsidian p-5 rounded-2xl border border-gold/30 shadow-lg">
+                    <div class="text-center">
+                        <div class="text-4xl font-extrabold text-white">4,2</div>
+                        <div class="text-amberFire text-sm tracking-widest mt-0.5">★★★★☆</div>
+                    </div>
+                    <div class="h-12 w-px bg-white/10"></div>
+                    <div>
+                        <div class="font-bold text-white text-sm sm:text-base" data-i18n="rev_based">Basé sur 85 avis Google</div>
+                        <div class="flex flex-wrap gap-1.5 mt-2">
+                            <span class="px-2 py-0.5 rounded-md bg-white/5 text-[11px] text-gray-300">Fruits de mer</span>
+                            <span class="px-2 py-0.5 rounded-md bg-white/5 text-[11px] text-gray-300">Spaghetti</span>
+                            <span class="px-2 py-0.5 rounded-md bg-white/5 text-[11px] text-gray-300">Grillade</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 Featured Real Reviews -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Review 1: Amal wonderfun -->
+                <div class="p-6 rounded-2xl bg-obsidian border border-white/10 flex flex-col justify-between card-hover">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-gold to-grillOrange text-obsidian font-bold flex items-center justify-center">A</div>
+                                <div>
+                                    <div class="font-bold text-white text-sm">Amal wonderfun</div>
+                                    <div class="text-xs text-gray-400">Local Guide · 56 avis</div>
+                                </div>
+                            </div>
+                            <span class="text-amberFire text-sm">★★★★★</span>
+                        </div>
+                        <p class="text-sm text-gray-300 leading-relaxed italic">
+                            « Un restaurant très sympa où l’on mange vraiment délicieux ! Tout était excellent et servi au bon moment. Le service est rapide, les serveurs sont très aimables et attentionnés. L’ambiance est agréable et tranquille. »
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-white/5 text-[11px] text-gray-500">Avis Google vérifié</div>
+                </div>
+
+                <!-- Review 2: Joy -->
+                <div class="p-6 rounded-2xl bg-obsidian border border-white/10 flex flex-col justify-between card-hover">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-500 to-teal-700 text-white font-bold flex items-center justify-center">J</div>
+                                <div>
+                                    <div class="font-bold text-white text-sm">Joy</div>
+                                    <div class="text-xs text-gray-400">Local Guide · 69 avis</div>
+                                </div>
+                            </div>
+                            <span class="text-amberFire text-sm">★★★★☆</span>
+                        </div>
+                        <p class="text-sm text-gray-300 leading-relaxed italic">
+                            « The food was good, I think my only complaint is I would have wished the fondant pistache was covered with dark chocolate instead of pistachio sauce. The service is really good, the manager and all the employees were nice. »
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-white/5 text-[11px] text-gray-500">Avis Google vérifié</div>
+                </div>
+
+                <!-- Review 3: Mohamed KECHAOU -->
+                <div class="p-6 rounded-2xl bg-obsidian border border-white/10 flex flex-col justify-between card-hover">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-amberFire to-grillRed text-white font-bold flex items-center justify-center">M</div>
+                                <div>
+                                    <div class="font-bold text-white text-sm">Mohamed KECHAOU</div>
+                                    <div class="text-xs text-gray-400">Local Guide · 33 avis</div>
+                                </div>
+                            </div>
+                            <span class="text-amberFire text-sm">★★★★☆</span>
+                        </div>
+                        <p class="text-sm text-gray-300 leading-relaxed italic">
+                            « Menu diversifié, choix pour tous les goûts. Les plats sont de bonne qualité et délicieux. Dans tous les cas ça reste une bonne adresse à recommander. »
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-white/5 text-[11px] text-gray-500">Avis Google vérifié</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RESERVATION & CONTACT FOOTER ==================== -->
+    <section id="reservation" class="py-20 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+
+                <!-- Left 7 Cols: Interactive WhatsApp Table Reservation Form -->
+                <div class="lg:col-span-7 bg-charcoal p-6 sm:p-10 rounded-3xl border border-gold/25 shadow-2xl">
+                    <span class="text-xs font-bold uppercase tracking-[0.2em] text-gold" data-i18n="res_kicker">Réservation Instantanée</span>
+                    <h2 class="font-serif text-2xl sm:text-4xl font-bold text-white mt-2" data-i18n="res_title">Réservez Votre Table ou Drive</h2>
+                    <p class="text-sm text-gray-400 mt-2 mb-7" data-i18n="res_subtitle">
+                        Remplissez ce formulaire pour envoyer instantanément votre demande sur le WhatsApp officiel du restaurant (+216 98 412 143).
+                    </p>
+
+                    <form id="reservationForm" onsubmit="submitWhatsAppReservation(event)" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 mb-1.5" data-i18n="form_name">Votre Nom complet *</label>
+                                <input type="text" id="resName" required placeholder="Ex: Ahmed Ben Ali" class="w-full px-4 py-3 rounded-xl bg-obsidian border border-white/15 text-sm text-white focus:outline-none focus:border-gold">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 mb-1.5" data-i18n="form_guests">Nombre de personnes *</label>
+                                <select id="resGuests" class="w-full px-4 py-3 rounded-xl bg-obsidian border border-white/15 text-sm text-white focus:outline-none focus:border-gold">
+                                    <option value="2 personnes">2 personnes</option>
+                                    <option value="3 personnes">3 personnes</option>
+                                    <option value="4 personnes" selected>4 personnes (Famille)</option>
+                                    <option value="5 personnes">5 personnes</option>
+                                    <option value="6+ personnes">6+ personnes (Groupe)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 mb-1.5" data-i18n="form_date">Date *</label>
+                                <input type="date" id="resDate" required class="w-full px-4 py-3 rounded-xl bg-obsidian border border-white/15 text-sm text-white focus:outline-none focus:border-gold">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 mb-1.5" data-i18n="form_time">Heure (12:00 - 23:30) *</label>
+                                <select id="resTime" class="w-full px-4 py-3 rounded-xl bg-obsidian border border-white/15 text-sm text-white focus:outline-none focus:border-gold">
+                                    <option value="12:30">12:30 (Déjeuner)</option>
+                                    <option value="13:30">13:30 (Déjeuner)</option>
+                                    <option value="19:30">19:30 (Dîner)</option>
+                                    <option value="20:30" selected>20:30 (Dîner)</option>
+                                    <option value="21:30">21:30 (Dîner)</option>
+                                    <option value="22:30">22:30 (Soirée)</option>
+                                    <option value="23:30">23:30</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 mb-1.5" data-i18n="form_service">Service *</label>
+                                <select id="resType" class="w-full px-4 py-3 rounded-xl bg-obsidian border border-white/15 text-sm text-white focus:outline-none focus:border-gold">
+                                    <option value="Repas sur place">Repas sur place</option>
+                                    <option value="Drive / À emporter">Drive / À emporter</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1.5" data-i18n="form_notes">Note ou préférence (Optionnel)</label>
+                            <input type="text" id="resNotes" placeholder="Ex: Table calme en famille, allergie, ou pré-commande..." class="w-full px-4 py-3 rounded-xl bg-obsidian border border-white/15 text-sm text-white focus:outline-none focus:border-gold">
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-obsidian font-extrabold text-base shadow-lg shadow-emerald-600/20 transition-all flex items-center justify-center gap-2.5">
+                            <!-- WhatsApp Icon -->
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+                            <span data-i18n="form_submit">Confirmer via WhatsApp (98 412 143)</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right 5 Cols: Contact Info & Interactive Map Card -->
+                <div id="contact" class="lg:col-span-5 space-y-6">
+                    <div class="bg-charcoal p-6 sm:p-8 rounded-3xl border border-white/10 space-y-5">
+                        <h3 class="font-serif text-2xl font-bold text-white" data-i18n="info_title">Informations & Accès</h3>
+
+                        <div class="space-y-4 text-sm">
+                            <div class="flex items-start gap-3.5">
+                                <div class="w-9 h-9 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center shrink-0 text-gold">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-white">Route de Mahdia, Sfax</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">Plus Code: QQ29+H6 Sfax · Tunisie</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3.5">
+                                <div class="w-9 h-9 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center shrink-0 text-gold">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                                </div>
+                                <div>
+                                    <a href="tel:+21698412143" dir="ltr" class="font-bold text-white hover:text-gold text-base">98 412 143</a>
+                                    <div class="text-xs text-gray-400 mt-0.5" data-i18n="info_phone_sub">Appels directs & WhatsApp</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3.5">
+                                <div class="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center shrink-0 text-emerald-400">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-emerald-400" data-i18n="info_hours">Ouvert tous les jours jusqu'à 00:00</div>
+                                    <div class="text-xs text-gray-400 mt-0.5" data-i18n="info_services">Repas sur place · Drive disponible · Livraison Glovo</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sleek Embedded Interactive Map Card -->
+                    <div class="bg-charcoal rounded-3xl border border-white/10 overflow-hidden shadow-xl">
+                        <div class="relative h-56 w-full bg-slateDark">
+                            <iframe
+                                title="Carte Machewi Mahmoud Becha Sfax"
+                                class="w-full h-full border-0 filter invert-[90%] hue-rotate-180 contrast-[95%]"
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                src="https://www.openstreetmap.org/export/embed.html?bbox=10.7580%2C34.7464%2C10.7780%2C34.7564&layer=mapnik&marker=34.7514387%2C10.7680431">
+                            </iframe>
+                            <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-obsidian/90 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-gold/30">
+                                <span class="text-xs font-semibold text-white">Route de Mahdia, Sfax</span>
+                                <a href="https://www.google.com/maps/place/Machewi+Mahmoud+becha/@34.7514387,10.7630399,16z" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-xl bg-gold text-obsidian font-bold text-xs hover:brightness-110 transition-all" data-i18n="btn_maps">
+                                    Ouvrir dans Google Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-charcoal border-t border-white/10 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div>
+                <div class="font-serif font-bold text-white text-lg">MACHEWI MAHMOUD BECHA <span class="text-gold font-arabic text-base mx-1">مشاوي محمود باشا</span></div>
+                <p class="text-xs text-gray-400 mt-1">Route de Mahdia, Sfax · Tél: <span dir="ltr">98 412 143</span></p>
+            </div>
+            <div class="text-xs text-gray-500">
+                © 2026 Machewi Mahmoud Becha. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== ORDER / BILL ESTIMATOR DRAWER MODAL ==================== -->
+    <div id="cartDrawerOverlay" onclick="closeCartDrawer()" class="fixed inset-0 bg-black/75 backdrop-blur-sm z-50 hidden transition-opacity"></div>
+    <aside id="cartDrawer" class="fixed top-0 right-0 rtl:right-auto rtl:left-0 h-full w-full max-w-md bg-charcoal border-l rtl:border-l-0 rtl:border-r border-gold/30 z-50 transform translate-x-full rtl:-translate-x-full transition-transform duration-300 flex flex-col">
+        <!-- Drawer Header -->
+        <div class="p-6 border-b border-white/10 flex items-center justify-between">
+            <div>
+                <h3 class="font-serif text-xl font-bold text-white" data-i18n="cart_title">Simulateur d'Addition</h3>
+                <p class="text-xs text-gray-400 mt-0.5" data-i18n="cart_sub">Estimez votre budget ou commandez en Drive</p>
+            </div>
+            <button onclick="closeCartDrawer()" class="p-2 rounded-xl bg-obsidian text-gray-400 hover:text-white border border-white/10">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+        </div>
+
+        <!-- Drawer Items List -->
+        <div id="cartItemsContainer" class="flex-1 overflow-y-auto p-6 space-y-3">
+            <!-- Populated by JS -->
+        </div>
+
+        <!-- Drawer Footer & WhatsApp Order Button -->
+        <div class="p-6 bg-obsidian border-t border-white/10 space-y-4">
+            <div class="flex items-center justify-between text-base">
+                <span class="text-gray-300 font-medium" data-i18n="cart_total_label">Total Estimé :</span>
+                <span class="text-2xl font-extrabold text-gold"><span id="cartDrawerTotal">0,000</span> DT</span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2">
+                <select id="cartOrderType" class="px-3 py-2.5 rounded-xl bg-charcoal border border-white/15 text-xs text-white focus:outline-none focus:border-gold">
+                    <option value="Drive / À emporter">Drive / À emporter</option>
+                    <option value="Repas sur place">Repas sur place</option>
+                </select>
+                <button onclick="clearCart()" class="px-3 py-2.5 rounded-xl bg-white/5 hover:bg-red-500/20 text-xs text-gray-300 hover:text-red-400 border border-white/10 transition-colors" data-i18n="cart_clear">
+                    Vider la sélection
+                </button>
+            </div>
+
+            <button onclick="sendCartViaWhatsApp()" id="sendCartWhatsappBtn" class="w-full py-3.5 rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-600 text-obsidian font-extrabold text-sm hover:brightness-110 transition-all flex items-center justify-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+                <span data-i18n="cart_whatsapp">Commander sur WhatsApp</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Custom Toast Notification (No alert() used) -->
+    <div id="toastNotification" class="fixed top-24 left-1/2 -translate-x-1/2 z-50 px-5 py-3 rounded-2xl bg-charcoal border border-gold text-white text-sm font-semibold shadow-2xl opacity-0 pointer-events-none transition-all duration-300 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-gold"></span>
+        <span id="toastMessage">Plat ajouté à votre addition !</span>
+    </div>
+
+    <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+    <script>
+        // Exact Menu Data extracted from Machewi Mahmoud Becha's printed card
+        const MENU_ITEMS = [
+            // Plats / Fruits de Mer & Pâtes (أطباق)
+            { id: 1, category: 'seafood', fr: 'Ijja Fruits de Mer (2P)', ar: 'عجة غلال البحر (2P)', price: 49.000, badge: '2 Personnes' },
+            { id: 2, category: 'seafood', fr: 'Ijja Fruits de Mer (1P)', ar: 'عجة غلال البحر (1P)', price: 34.000 },
+            { id: 3, category: 'seafood', fr: 'Spagetti Fruits de Mer (2P)', ar: 'سباقتي غلال البحر (2P)', price: 49.000, badge: '2 Personnes' },
+            { id: 4, category: 'seafood', fr: 'Spagetti Fruits de Mer (1P)', ar: 'سباقتي غلال البحر (1P)', price: 34.000 },
+            { id: 5, category: 'seafood', fr: 'Fruits de Mer Sautés (2P)', ar: 'غلال البحر مقلي (2P)', price: 59.500, badge: '2 Personnes' },
+            { id: 6, category: 'seafood', fr: 'Fruits de Mer Sautés (1P)', ar: 'غلال البحر مقلي (1P)', price: 39.500 },
+            { id: 7, category: 'seafood', fr: 'Crevettes Pannées', ar: 'كروفات مبطن', price: 34.000 },
+            { id: 8, category: 'seafood', fr: 'Brochettes Crevettes', ar: 'سفود كروفات', price: 29.500 },
+            { id: 9, category: 'seafood', fr: 'Fruits de Mer au Sauce Blanche et Fromage', ar: 'غلال البحر بالصلصة البيضاء والجبنة', price: 63.500, badge: 'Signature' },
+            { id: 10, category: 'seafood', fr: 'Spagetti Crevettes', ar: 'سباقتي كروفات', price: 34.500, badge: 'Populaire' },
+            { id: 11, category: 'seafood', fr: 'Pâte Blanche Escalope', ar: 'مقرونة بيضاء بالإسكالوب', price: 29.500 },
+            { id: 12, category: 'seafood', fr: 'Pâte Blanche Crevettes', ar: 'مقرونة بيضاء بالكروفات', price: 37.500 },
+            { id: 13, category: 'seafood', fr: 'Crevettes Sautées', ar: 'كروفات مقلي', price: 38.500 },
+
+            // Viande & Volaille (اللحوم و الدواجن)
+            { id: 14, category: 'meat', fr: 'Escalopes Grillés', ar: 'إسكالوب مشوي', price: 25.000 },
+            { id: 15, category: 'meat', fr: 'Escalopes Pannés', ar: 'إسكالوب مبطن', price: 25.000 },
+            { id: 16, category: 'meat', fr: 'Escalope aux Champignons et Sauce Blanche', ar: 'إسكالوب بالفطر والصلصة البيضاء', price: 30.500 },
+            { id: 17, category: 'meat', fr: "Côtelettes d'Agneau", ar: 'كتلات علوش', price: 30.000 },
+            { id: 18, category: 'meat', fr: 'Grillage Mixte', ar: 'مشوي مشكل', price: 39.500, badge: 'Populaire' },
+            { id: 19, category: 'meat', fr: 'Filet Grillé', ar: 'فيلاي مشوي', price: 38.500 },
+            { id: 20, category: 'meat', fr: 'Filet aux Champignons', ar: 'فيلاي بالفطر', price: 42.500 },
+            { id: 21, category: 'meat', fr: 'Filet au Poivron Vert', ar: 'فيلاي بالفلفل الأخضر', price: 42.500 },
+            { id: 22, category: 'meat', fr: "Souris d'Agneau", ar: 'عرقوب الخروف', price: 49.500, badge: 'Spécialité' }
+        ];
+
+        // Bilingual Translations Dictionary
+        const TRANSLATIONS = {
+            fr: {
+                nav_home: 'Accueil',
+                nav_specialties: 'Spécialités',
+                nav_menu: 'Menu',
+                nav_reviews: 'Avis (4.2★)',
+                nav_contact: 'Contact',
+                nav_cta: 'Réserver / Commander',
+                badge_reviews: 'sur Google (85 avis)',
+                badge_hours: 'Ouvert jusqu’à 00:00',
+                badge_service: 'Repas sur place & Drive',
+                hero_title_1: 'L’Art de la Grillade & des ',
+                hero_title_2: 'Fruits de Mer à Sfax',
+                hero_subtitle: 'Saveurs authentiques, produits frais et ambiance familiale sur la Route de Mahdia.',
+                cta_menu: 'Voir le Menu Complet',
+                cta_glovo: 'Commander sur Glovo',
+                stat_price: 'Budget moyen / pers.',
+                stat_fresh: 'Fruits de mer & Viandes',
+                stat_night: 'Service tardif chaque soir',
+                stat_loc: 'Sfax, Accès facile & Drive',
+                spec_kicker: 'Les Incontournables de la Maison',
+                spec_title: 'Nos Spécialités Signatures',
+                spec_desc: 'Préparés à la minute sur notre grill ou sautés avec nos épices méditerranéennes traditionnelles de Sfax.',
+                tag_bestseller: '★ Best-Seller',
+                tag_grill: '🔥 Au Feu de Bois',
+                tag_meat: '🥩 Grillades',
+                tag_chef: '👑 Plat du Chef',
+                spec1_desc: "Grosses crevettes fraîches sautées à l'ail, sauce tomate relevée aux épices sfaxiennes.",
+                spec2_desc: 'Poisson frais du jour grillé à la perfection, servi avec frites maison, salade méchouia et citron.',
+                spec3_desc: 'Assortiment généreux de viandes tendres marinées et grillées au charbon, idéal pour les amateurs de grillades.',
+                spec4_desc: "Trésors de la mer nappés d'une sauce blanche onctueuse gratinée au fromage fondant.",
+                price_market: 'Selon arrivage',
+                btn_add_order: '+ Ajouter à ma commande',
+                btn_reserve_fish: 'Réserver une table',
+                menu_kicker: 'La Carte Officielle',
+                menu_title: 'Notre Menu Complet',
+                menu_subtitle: 'Composez votre sélection pour estimer votre addition ou envoyer directement votre commande à emporter (Drive) via WhatsApp.',
+                tab_all: 'Tout le Menu (22)',
+                tab_seafood: 'Fruits de Mer & Pâtes / أطباق',
+                tab_meat: 'Viande & Volaille / اللحوم و الدواجن',
+                menu_empty: 'Aucun plat ne correspond à votre recherche.',
+                menu_reset: 'Réinitialiser les filtres',
+                est_label: "Simulateur d'Addition",
+                est_view: 'Voir & Commander',
+                rev_kicker: 'La Parole à Nos Clients',
+                rev_title: 'Avis Vérifiés sur Google',
+                rev_based: 'Basé sur 85 avis Google',
+                res_kicker: 'Réservation Instantanée',
+                res_title: 'Réservez Votre Table ou Drive',
+                res_subtitle: 'Remplissez ce formulaire pour envoyer instantanément votre demande sur le WhatsApp officiel du restaurant (+216 98 412 143).',
+                form_name: 'Votre Nom complet *',
+                form_guests: 'Nombre de personnes *',
+                form_date: 'Date *',
+                form_time: 'Heure (12:00 - 23:30) *',
+                form_service: 'Service *',
+                form_notes: 'Note ou préférence (Optionnel)',
+                form_submit: 'Confirmer via WhatsApp (98 412 143)',
+                info_title: 'Informations & Accès',
+                info_phone_sub: 'Appels directs & WhatsApp',
+                info_hours: "Ouvert tous les jours jusqu'à 00:00",
+                info_services: 'Repas sur place · Drive disponible · Livraison Glovo',
+                btn_maps: 'Ouvrir dans Google Maps',
+                cart_title: "Simulateur d'Addition",
+                cart_sub: 'Estimez votre budget ou commandez en Drive',
+                cart_total_label: 'Total Estimé :',
+                cart_clear: 'Vider la sélection',
+                cart_whatsapp: 'Commander sur WhatsApp'
+            },
+            ar: {
+                nav_home: 'الرئيسية',
+                nav_specialties: 'أطباقنا المميزة',
+                nav_menu: 'قائمة الطعام',
+                nav_reviews: 'آراء الحرفاء (4.2★)',
+                nav_contact: 'اتصل بنا',
+                nav_cta: 'احجز طاولة / اطلب الآن',
+                badge_reviews: 'على قوقل (85 تقييم)',
+                badge_hours: 'مفتوح يومياً حتى 00:00',
+                badge_service: 'أكل على عين المكان و درايف',
+                hero_title_1: 'فن المشاوي ',
+                hero_title_2: 'وغلال البحر في صفاقس',
+                hero_subtitle: 'نكهات أصيلة، منتجات بحرية طازجة وأجواء عائلية راقية في طريق المهدية، صفاقس.',
+                cta_menu: 'تصفح القائمة الكاملة',
+                cta_glovo: 'اطلب عبر Glovo',
+                stat_price: 'متوسط السعر للشخص',
+                stat_fresh: 'غلال بحر ولحوم طازجة',
+                stat_night: 'خدمة ليلية حتى منتصف الليل',
+                stat_loc: 'طريق المهدية، صفاقس',
+                spec_kicker: 'اختيارات الشيف',
+                spec_title: 'أشهر أطباقنا في صفاقس',
+                spec_desc: 'تُحضّر طازجة عند الطلب على الفحم أو مع الصلصات الصفاقسية الأصيلة.',
+                tag_bestseller: '★ الأكثر طلباً',
+                tag_grill: '🔥 مشوي على الفحم',
+                tag_meat: '🥩 مشويات',
+                tag_chef: '👑 طبق الشيف',
+                spec1_desc: 'كروفات طازج مقلي بالثوم مع سباقتي بصلصة الطماطم والتوابل الصفاقسية.',
+                spec2_desc: 'سمك قاروص طازج مشوي بإتقان، يُقدّم مع بطاطا مقلية، سلاطة مشوية وليمون.',
+                spec3_desc: 'تشكيلة سخية من اللحوم المتبلة والمشوية على الفحم لعشاق المشاوي.',
+                spec4_desc: 'تشكيلة غلال البحر مغطاة بالصلصة البيضاء الكريمية والجبنة الذائبة.',
+                price_market: 'حسب السوق',
+                btn_add_order: '+ أضف إلى طلبي',
+                btn_reserve_fish: 'احجز طاولة الآن',
+                menu_kicker: 'القائمة الرسمية',
+                menu_title: 'قائمة الطعام والأسعار',
+                menu_subtitle: 'اختر أطباقك لحساب الفاتورة التقديرية أو إرسال طلبك مباشرة عبر واتساب.',
+                tab_all: 'كل الأطباق (22)',
+                tab_seafood: 'غلال البحر والمقرونة / أطباق',
+                tab_meat: 'اللحوم و الدواجن',
+                menu_empty: 'لا يوجد طبق يطابق بحثك.',
+                menu_reset: 'إعادة ضبط البحث',
+                est_label: 'حاسبة الفاتورة',
+                est_view: 'عرض الطلب',
+                rev_kicker: 'ثقة حرفائنا',
+                rev_title: 'تقييمات الحرفاء على قوقل',
+                rev_based: 'بناءً على 85 تقييم على قوقل',
+                res_kicker: 'حجز فوري',
+                res_title: 'احجز طاولتك أو طلب درايف',
+                res_subtitle: 'املأ البيانات لإرسال حجزك مباشرة إلى واتساب المطعم (98 412 143).',
+                form_name: 'الاسم الكامل *',
+                form_guests: 'عدد الأشخاص *',
+                form_date: 'التاريخ *',
+                form_time: 'الوقت (12:00 - 23:30) *',
+                form_service: 'نوع الخدمة *',
+                form_notes: 'ملاحظات إضافية (اختياري)',
+                form_submit: 'تأكيد عبر واتساب (98 412 143)',
+                info_title: 'معلومات الوصول والاتصال',
+                info_phone_sub: 'مكالمات مباشرة وواتساب',
+                info_hours: 'مفتوح يومياً حتى الساعة 00:00 ليلاً',
+                info_services: 'أكل على عين المكان · درايف · توصيل عبر Glovo',
+                btn_maps: 'افتح في خرائط قوقل',
+                cart_title: 'حاسبة الفاتورة والطلب',
+                cart_sub: 'احسب مجموع طلبك أو أرسله عبر واتساب',
+                cart_total_label: 'المجموع التقديري :',
+                cart_clear: 'إفراغ السلة',
+                cart_whatsapp: 'إرسال الطلب عبر واتساب'
+            }
+        };
+
+        let currentLang = 'fr';
+        let currentCategory = 'all';
+        let cart = [];
+
+        // Format Tunisian Dinar (e.g., 49.000 -> "49,000")
+        function formatDT(amount) {
+            return amount.toFixed(3).replace('.', ',');
+        }
+
+        // Toggle French / Arabic with full RTL layout support
+        function toggleLanguage() {
+            currentLang = currentLang === 'fr' ? 'ar' : 'fr';
+            const htmlEl = document.documentElement;
+            htmlEl.setAttribute('lang', currentLang);
+            htmlEl.setAttribute('dir', currentLang === 'ar' ? 'rtl' : 'ltr');
+
+            document.getElementById('langLabel').textContent = currentLang === 'fr' ? 'عربي' : 'FR';
+
+            // Update all elements with data-i18n
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (TRANSLATIONS[currentLang][key]) {
+                    el.textContent = TRANSLATIONS[currentLang][key];
+                }
+            });
+
+            // Update search placeholder
+            const searchInput = document.getElementById('menuSearch');
+            searchInput.placeholder = currentLang === 'fr'
+                ? 'Rechercher un plat (ex: Crevettes, Agneau...)'
+                : 'ابحث عن طبق (مثال: كروفات، علوش، سباقتي...)';
+
+            renderMenu();
+            renderCart();
+        }
+
+        // Set Active Category Tab
+        function setCategory(cat) {
+            currentCategory = cat;
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                if (btn.getAttribute('data-cat') === cat) {
+                    btn.classList.remove('bg-slateDark', 'text-gray-300');
+                    btn.classList.add('bg-gold', 'text-obsidian', 'font-bold');
+                } else {
+                    btn.classList.remove('bg-gold', 'text-obsidian', 'font-bold');
+                    btn.classList.add('bg-slateDark', 'text-gray-300');
+                }
+            });
+            renderMenu();
+        }
+
+        function resetFilters() {
+            document.getElementById('menuSearch').value = '';
+            setCategory('all');
+        }
+
+        // Render Menu Cards
+        function renderMenu() {
+            const grid = document.getElementById('menuGrid');
+            const emptyState = document.getElementById('emptyMenuState');
+            const query = document.getElementById('menuSearch').value.trim().toLowerCase();
+
+            const filtered = MENU_ITEMS.filter(item => {
+                const matchesCat = currentCategory === 'all' || item.category === currentCategory;
+                const matchesQuery = item.fr.toLowerCase().includes(query) || item.ar.includes(query);
+                return matchesCat && matchesQuery;
+            });
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '';
+                emptyState.classList.remove('hidden');
+                return;
+            }
+
+            emptyState.classList.add('hidden');
+            grid.innerHTML = filtered.map(item => {
+                const inCart = cart.find(c => c.id === item.id);
+                const qty = inCart ? inCart.qty : 0;
+
+                return `
+                <div class="p-4 sm:p-5 rounded-2xl bg-charcoal border border-white/10 hover:border-gold/40 transition-all flex items-center justify-between gap-4 group">
+                    <div class="flex-1 min-w-0">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <h3 class="font-bold text-white text-base sm:text-lg group-hover:text-gold transition-colors">${item.fr}</h3>
+                            ${item.badge ? `<span class="px-2 py-0.5 rounded-md bg-gold/15 border border-gold/30 text-[10px] font-bold text-gold uppercase tracking-wide">${item.badge}</span>` : ''}
+                        </div>
+                        <p class="font-arabic text-sm text-gray-400 mt-1">${item.ar}</p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-end sm:items-center gap-3 shrink-0">
+                        <div class="text-right rtl:text-left">
+                            <span class="font-extrabold text-gold text-base sm:text-lg" dir="ltr">${formatDT(item.price)}</span>
+                            <span class="text-xs text-gray-400 font-semibold">DT</span>
+                        </div>
+
+                        ${qty === 0 ? `
+                            <button onclick="addToCart(${item.id})" class="px-3.5 py-2 rounded-xl bg-obsidian hover:bg-gold text-gold hover:text-obsidian border border-gold/30 text-xs font-bold transition-all whitespace-nowrap">
+                                ${currentLang === 'fr' ? '+ Ajouter' : '+ أضف'}
+                            </button>
+                        ` : `
+                            <div class="flex items-center gap-2 bg-obsidian border border-gold/50 rounded-xl p-1">
+                                <button onclick="updateQty(${item.id}, -1)" class="w-7 h-7 rounded-lg bg-charcoal hover:bg-grillRed/30 text-white font-bold flex items-center justify-center">-</button>
+                                <span class="w-5 text-center text-xs font-bold text-gold">${qty}</span>
+                                <button onclick="updateQty(${item.id}, 1)" class="w-7 h-7 rounded-lg bg-gold text-obsidian font-bold flex items-center justify-center">+</button>
+                            </div>
+                        `}
+                    </div>
+                </div>
+                `;
+            }).join('');
+        }
+
+        // Cart / Estimator Logic
+        function addToCart(id) {
+            const item = MENU_ITEMS.find(i => i.id === id);
+            if (!item) return;
+
+            const existing = cart.find(c => c.id === id);
+            if (existing) {
+                existing.qty += 1;
+            } else {
+                cart.push({ ...item, qty: 1 });
+            }
+
+            showToast(currentLang === 'fr' ? `${item.fr} ajouté à l'addition` : `تمت إضافة ${item.ar}`);
+            renderMenu();
+            renderCart();
+        }
+
+        function quickAddByName(frName) {
+            const found = MENU_ITEMS.find(i => i.fr.toLowerCase() === frName.toLowerCase());
+            if (found) addToCart(found.id);
+        }
+
+        function updateQty(id, delta) {
+            const idx = cart.findIndex(c => c.id === id);
+            if (idx === -1) return;
+
+            cart[idx].qty += delta;
+            if (cart[idx].qty <= 0) {
+                cart.splice(idx, 1);
+            }
+            renderMenu();
+            renderCart();
+        }
+
+        function clearCart() {
+            cart = [];
+            renderMenu();
+            renderCart();
+        }
+
+        function renderCart() {
+            const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
+            const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+
+            // Header badge
+            const badge = document.getElementById('cartBadge');
+            if (totalItems > 0) {
+                badge.textContent = totalItems;
+                badge.classList.remove('hidden');
+            } else {
+                badge.classList.add('hidden');
+            }
+
+            // Floating bottom bar
+            const floatingBar = document.getElementById('floatingCartBar');
+            if (totalItems > 0) {
+                document.getElementById('floatingTotal').textContent = formatDT(totalPrice);
+                document.getElementById('floatingCount').textContent = totalItems;
+                floatingBar.classList.remove('hidden');
+            } else {
+                floatingBar.classList.add('hidden');
+            }
+
+            // Drawer content
+            document.getElementById('cartDrawerTotal').textContent = formatDT(totalPrice);
+            const sendBtn = document.getElementById('sendCartWhatsappBtn');
+            sendBtn.disabled = totalItems === 0;
+
+            const container = document.getElementById('cartItemsContainer');
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-16 text-gray-500">
+                        <p class="text-sm">${currentLang === 'fr' ? 'Votre sélection est vide. Ajoutez des plats depuis le menu pour estimer votre addition.' : 'قائمتك فارغة حالياً. أضف أطباقاً من القائمة لحساب الفاتورة.'}</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = cart.map(item => `
+                <div class="p-3.5 rounded-2xl bg-obsidian border border-white/10 flex items-center justify-between gap-3">
+                    <div class="min-w-0">
+                        <div class="font-bold text-sm text-white truncate">${item.fr}</div>
+                        <div class="text-xs text-gold font-semibold mt-0.5" dir="ltr">${formatDT(item.price)} DT × ${item.qty}</div>
+                    </div>
+                    <div class="flex items-center gap-2 shrink-0">
+                        <button onclick="updateQty(${item.id}, -1)" class="w-7 h-7 rounded-lg bg-charcoal text-white font-bold hover:bg-red-500/20">-</button>
+                        <span class="text-xs font-bold text-white w-4 text-center">${item.qty}</span>
+                        <button onclick="updateQty(${item.id}, 1)" class="w-7 h-7 rounded-lg bg-gold text-obsidian font-bold">+</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function openCartDrawer() {
+            document.getElementById('cartDrawerOverlay').classList.remove('hidden');
+            const drawer = document.getElementById('cartDrawer');
+            drawer.classList.remove('translate-x-full', 'rtl:-translate-x-full');
+        }
+
+        function closeCartDrawer() {
+            document.getElementById('cartDrawerOverlay').classList.add('hidden');
+            const drawer = document.getElementById('cartDrawer');
+            drawer.classList.add('translate-x-full', 'rtl:-translate-x-full');
+        }
+
+        // Send Order Estimator via WhatsApp (+216 98 412 143)
+        function sendCartViaWhatsApp() {
+            if (cart.length === 0) return;
+            const orderType = document.getElementById('cartOrderType').value;
+            const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+
+            let lines = [
+                `Bonjour *Machewi Mahmoud Becha* 🔥,`,
+                `Je souhaite passer une pré-commande (${orderType}) :`,
+                ``
+            ];
+
+            cart.forEach(item => {
+                lines.push(`• ${item.qty}x ${item.fr} (${formatDT(item.price * item.qty)} DT)`);
+            });
+
+            lines.push(``);
+            lines.push(`*Total estimé : ${formatDT(totalPrice)} DT*`);
+            lines.push(`Merci de me confirmer la disponibilité !`);
+
+            const url = `https://wa.me/21698412143?text=${encodeURIComponent(lines.join('\n'))}`;
+            window.open(url, '_blank', 'noopener,noreferrer');
+        }
+
+        // Send Table Reservation Form via WhatsApp (+216 98 412 143)
+        function submitWhatsAppReservation(e) {
+            e.preventDefault();
+            const name = document.getElementById('resName').value.trim();
+            const guests = document.getElementById('resGuests').value;
+            const date = document.getElementById('resDate').value;
+            const time = document.getElementById('resTime').value;
+            const type = document.getElementById('resType').value;
+            const notes = document.getElementById('resNotes').value.trim();
+
+            let msg = [
+                `Bonjour *Machewi Mahmoud Becha* 🔥,`,
+                `Je souhaite effectuer une réservation :`,
+                `• *Nom :* ${name}`,
+                `• *Type :* ${type}`,
+                `• *Date :* ${date}`,
+                `• *Heure :* ${time}`,
+                `• *Personnes :* ${guests}`
+            ];
+
+            if (notes) {
+                msg.push(`• *Note :* ${notes}`);
+            }
+
+            msg.push(`\nMerci de confirmer ma réservation.`);
+
+            const url = `https://wa.me/21698412143?text=${encodeURIComponent(msg.join('\n'))}`;
+            window.open(url, '_blank', 'noopener,noreferrer');
+        }
+
+        // Mobile Nav Toggle
+        function toggleMobileMenu() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        }
+
+        // Toast Feedback
+        let toastTimer;
+        function showToast(text) {
+            const toast = document.getElementById('toastNotification');
+            document.getElementById('toastMessage').textContent = text;
+            toast.classList.remove('opacity-0', 'pointer-events-none');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => {
+                toast.classList.add('opacity-0', 'pointer-events-none');
+            }, 2400);
+        }
+
+        // Initialize Default Date & Render Menu on Load
+        window.addEventListener('DOMContentLoaded', () => {
+            const today = new Date().toISOString().split('T')[0];
+            const dateInput = document.getElementById('resDate');
+            if (dateInput) {
+                dateInput.value = today;
+                dateInput.min = today;
+            }
+            renderMenu();
+            renderCart();
+        });
+    </script>
+</body>
+</html>
